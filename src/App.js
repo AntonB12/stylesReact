@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {Cuadrado, Rectangulo, Component, Input, RedText, BlueText, GloblalStyle} from './styled';
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <GloblalStyle />
+
+    <Cuadrado/>
+    <Rectangulo/>
+    <Component isRight={true}>holis</Component>
+    <Input myMaxLength={100}/>
+    <RedText>jlklk</RedText>
+    <BlueText>hlhljhlk</BlueText>
+
+   </div>
   );
 }
 
